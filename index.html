@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <!-- CUSTOM STYLE  -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="savie.css">
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+</head>
+
+<body>
+    <section>
+        <div class="sports">
+            <!-- Navigation -->
+            <header class="header">
+                <nav class="navbar">
+                    <a href="#" class="nav-logo">School Equipment</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#section2" class="nav-link" id="section1">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#section3" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section4" class="nav-link">Signup for equipment</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+            </nav>
+            </header>
+        </div>
+    </section>
+    <section class="savis" id="section2">
+        <h3>Our Services</h3>
+        <p class="section-lead">We offer sports equipment of each sports that you would require. Anything you want we got you, from tennis to rugby, from soccer to basketball.</p>
+        <div class="services-grid">
+            <div class="service service1">
+                <i class="ion-ios-football"></i>
+                <h4>Soccer</h4>
+                <p>Soccer balls are in plenty for students to train with and for official matches. Football jerseys and boots are also available for students</p>
+                <a href="#" id="section2" class="cta">Read More <span class="ti-angle-right"></a>
+            </div>
+
+            <div class="service service2">
+                <i class="ion-ios-basketball"></i>
+                <h4>Basketball</h4>
+                <p>Where do we start. Basketball balls, basketball jerseys and basketball shoes all in plenty.</p>
+                <a href="#" class="cta">Read More <span class="ti-angle-right"></a>
+            </div>
+
+            <div class="service service3">
+                <i class="ion-ios-tennisball"></i>
+                <h4>Tennis</h4>
+                <p>Tennis balls, tennis rackets,tennis shoes and tennis clothes all available.</p>
+                <a href="#" class="cta">Read more <span class="ti-angle-right"></span></a>
+            </div>
+        </div>
+    </section>
+    <section class="backg">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="row pad-botm">
+                    <div class="col-md-12">
+                        <h4 class="header-line">User Signup</h4>
+
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-9 col-md-offset-1" id="section4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                SINGUP FORM
+                            </div>
+                            <div class="panel-body">
+                                <form name="signup" method="post" onSubmit="return numberValidation()">
+                                    <div class="form-group">
+                                        <label>Enter Full Name</label>
+                                        <input class="form-control" type="text" name="fullanme" autocomplete="off" required />
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label>School</label>
+                                        <input class="form-control" type="text" name="mobileno" maxlength="10" autocomplete="off" required />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Faculty</label>
+                                        <input class="form-control" type="text" name="mobileno" maxlength="10" autocomplete="off" required />
+                                        <span id="user-availability-status" style="font-size:12px;"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Programme</label>
+                                        <input class="form-control" type="text" name="mobileno" maxlength="10" autocomplete="off" required />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Year of Study</label>
+                                        <select>
+                                 <option value="2019/2020">2019/2020</option>
+                                 <option value="2020/2021">2020/2021</option>
+                                 <option value="2021/2022">2021/2022</option>
+                                 <option value="2022/2023">2022/2023</option>
+                              </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Admission Number </label>
+                                        <input class="form-control" type="text" name="mobileno" maxlength="10" autocomplete="off" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firstname">Age: </label>
+                                        <input type="text" name="numbers" />
+                                        <span id="numberText"></span>
+                                        <br />
+
+
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Please select your gender:</p>
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Male</label><br>
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Female</label><br>
+                                        <input type="radio" id="other" name="gender" value="other">
+                                        <label for="other">Other</label>
+                                    </div>
+                                    <button type="submit" name="signup" class="btn btn-danger" id="submit" onclick="allnumeric(document.form1.text1)">Register Now </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>As a department it is our responibilty to ensure that growing accademically is concurrent with your physical and well being.</p>
+        </div>
+
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="/img/team1.jpg" alt="Jane" style="width:100%">
+                    <div class="container">
+                        <h2>Jane Doe</h2>
+                        <p class="title">Head of department</p>
+                        <p>My job is to make sure all <br>the equipments you require are<br> available when you want.
+                        </p>
+                        <p>jane@gmailcom</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/img/team2.jpg" alt="Mike" style="width:100%">
+                    <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Teacher in charge</p>
+                        <p>All you require to enhance <br>your physical fitness will be availed to you.</p>
+                        <p>mike@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/img/team3.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Director of sports.</p>
+                        <p>As a school we want to ensure that inspite striving for academic exellence your physical needs are also met</p>
+                        <p>john@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><i class="icon ion-social-instagram"></i></a>
+                    <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#section1">Home</a></li>
+                    <li class="list-inline-item"><a href="#section2">Services</a></li>
+                    <li class="list-inline-item"><a href="#section3">About</a></li>
+                    <li class="list-inline-item"><a href="#section4">Sign up for equipment</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Sports Equipment © 2021</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="run.js"></script>
+    <script src="https://use.fontawesome.com/59ae58972c.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
